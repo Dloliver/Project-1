@@ -1,0 +1,130 @@
+/* . {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+
+/* body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: grey;
+}
+
+.images {
+  margin: 0 1em;
+}
+
+.images img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.imagesimg: hover {
+  transform: scale(0.9);
+}
+.modal {
+  position: fixed;
+  height: 80%;
+  width: 80%;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  color: white;
+  z-index: 1;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+.modalcontent {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalImg {
+  width: 80%;
+  max-width: 700px;
+  animation: zoom 0.3s linear;
+}
+.modalTxt {
+  margin-top: 1em;
+  animation: zoom 0.3s linear;
+}
+.close {
+  position: asolute;
+  top: 1em;
+  right: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.modal.appear {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.appear .modalImg,
+.modal.appear .modalTxt {
+  animation: zoom 0.3s linear;
+}
+
+@@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
+
+.img.container {
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal {
+  background: rgba(0, 0, 0 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.25s ease-out;
+}
+.modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+.full-img {
+  position: absolute;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.25s ease-out;
+}
+.full-img.open {
+  transform: translate(-50%, -50%) scale(1);
+}
+.modal p {
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-5-%, -5%);
+}
