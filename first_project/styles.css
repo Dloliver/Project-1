@@ -1,9 +1,22 @@
+html {
+  min-height: 100%;
+}
+
 body {
-  background-image: url(RicknMorty.png);
+  background-image: url(rickandmortysmall.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 750px;
-  height: 450px;
+  width: 420px;
+  height: 800px;
+  overflow: hidden;
+}
+
+@media (min-width: 420px) {
+  body {
+    background-image: url(RicknMorty.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .center {
   height: 35em;
