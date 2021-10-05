@@ -12,24 +12,26 @@
     <script src="app.js" charset="utf-8"></script>
   </head>
   <body>
-    <form>
-      <input type="submit" value="Whats your Reading" />
-    </form>
-
     <!-- <form>
       <input type="text" placeholder="Whats your reading?" />
       <input type="submit" value="Get Reading" />
     </form> -->
-    <h1>Today you are...</h1>
-    <div class="name">
-      <div class="episode"></div>
-      <!-- <img id="character" src="" alt="character photo" /> -->
-    </div>
-    <div class="heading">Wubba Dubba</div>
+    <!-- <h1>RIck and Morty Horoscope</h1> -->
+    <div class="center">
+      <form>
+        <input type="submit" value="Whats your Reading" />
+      </form>
 
-    <div class="gallery">
-      <div class="modalContent">
-        <img src="" class="modalImg" />
+      <div class="name">
+        <div class="episode"></div>
+      </div>
+      <!-- <img id="character" src="" alt="character photo" /> -->
+      <button id="openModal">More Info</button>
+    </div>
+    <div id="modal">
+      <div id="modal-textbox">
+        <div class="photo"></div>
+        <a id="close" href="#">Close</a>
       </div>
     </div>
   </body>
