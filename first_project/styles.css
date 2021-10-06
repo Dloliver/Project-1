@@ -2,20 +2,33 @@ html {
   min-height: 100%;
 }
 
-body {
-  background-image: url(rickandmortysmall.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 420px;
-  height: 800px;
-  overflow: hidden;
-}
-
-@media (min-width: 420px) {
+@media (max-width: 1100px) {
   body {
-    background-image: url(RicknMorty.png);
+    background: url(rickandmortysmall.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1101px) {
+  body {
+    background: url(RicknMorty.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1101px) {
+  .title {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-family: "Creepster", cursive;
+    display: flex;
+    justify-content: center;
+    color: rgb(50, 205, 50);
+    font-size: 90px;
   }
 }
 .center {
@@ -34,6 +47,13 @@ form {
   margin: 0;
   color: rgba(50, 205, 50, 0);
 }
+
+.name {
+  background-color: white;
+  color: green;
+  font-size: 40px;
+}
+
 #modal {
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -42,9 +62,7 @@ form {
   height: 100%;
   width: 100%;
   z-index: 1;
-  /*This puts our modal in front of the body (which has a default z-index setting of `0`*/
   overflow: auto;
-  /*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
   display: none;
 }
 
@@ -54,7 +72,5 @@ form {
   width: 700px;
   border-radius: 2px;
   margin: 150px auto;
-  /*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
-  /*This will give the box some depth.*/
 }

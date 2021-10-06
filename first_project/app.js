@@ -52,6 +52,9 @@ $(() => {
     }).then((data) => {
       e.preventDefault()
       const $newdiv = $("<div>").text(data.name).addClass('.character-name').prependTo($(".name"));
+      // $newdiv.css("background-color", 'white')
+      // $newdiv.css("")
+
       console.log(data);
       //$("#episode").text(data)
       const $newmodal = $("<div>").text(data.img).appendTo($newdiv);

@@ -3,15 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>Rick and Morty Horoscope</title>
-    <link rel="stylesheet" href="styles.css" />
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles.css" />
     <script src="app.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="song">
+      <audio autoplay loop>
+        <source src="rickandmortysong.wav" type="audio/wav" />
+      </audio>
+    </div>
+
+    <div class="title">
+      <h1>RICK and MORTY Horoscope</h1>
+    </div>
     <!-- <form>
       <input type="text" placeholder="Whats your reading?" />
       <input type="submit" value="Get Reading" />
@@ -19,7 +35,7 @@
     <!-- <h1>RIck and Morty Horoscope</h1> -->
     <div class="center">
       <form>
-        <input type="submit" value="Whats your Reading" />
+        <input type="submit" value="Whos your Character for the day?" />
       </form>
 
       <div class="name">
