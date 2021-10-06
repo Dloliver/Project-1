@@ -62,7 +62,10 @@ $(() => {
       $($newimg).attr('src', data.image);
       console.log(data.image);
       const $readingName = $('<div>').text(data.name).addClass('.modal-name').prependTo($('.photo'))
-      const $episode = $('<li>').text(data.episode).appendTo($('.photo'))
+      const $episode = $('<li>').text(data.episode).appendTo($readingName)
+      const $species = $('<li>').text(data.species).appendTo($readingName)
+      const $gender = $('<li>').text(data.gender).appendTo($readingName)
+      const $location = $('<li>').text(data.location.name).appendTo($readingName)
       //  const $episode = $('<div>').text(data.episode[horoscope]).appendTO($readingName);
 
 

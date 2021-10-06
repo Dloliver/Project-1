@@ -29,6 +29,7 @@ html {
     justify-content: center;
     color: rgb(50, 205, 50);
     font-size: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 .center {
@@ -36,11 +37,22 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Creepster", cursive;
+}
+
+.center input {
+  font-family: "Creepster", cursive;
+  font-size: 50px;
+}
+
+#openModal {
+  font-family: "Creepster", cursive;
+  font-size: 50px;
 }
 
 .photo {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
 }
 
 form {
@@ -50,8 +62,9 @@ form {
 
 .name {
   background-color: white;
-  color: green;
+  color: rgb(50, 205, 50);
   font-size: 40px;
+  font-family: "Creepster", cursive;
 }
 
 #modal {
@@ -67,10 +80,30 @@ form {
 }
 
 #modal-textbox {
-  background-color: rgba(255, 255, 255, 0.7);
-  height: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 600px;
   width: 700px;
   border-radius: 2px;
   margin: 150px auto;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-size: 35px;
+  font-family: "Creepster", cursive;
+  color: rgb(50, 205, 50);
+  list-style-type: none;
+}
+
+.song {
+  position: absolute;
+  bottom: 45px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(50, 205, 50, 0.8);
+  font-family: "Creepster", cursive;
+  display: flex;
+  justify-content: space-around;
+  font-size: 40px;
 }
