@@ -61,11 +61,11 @@ $(() => {
       const $newimg = $('<img>').appendTo($('.photo'));
       $($newimg).attr('src', data.image);
       console.log(data.image);
-      const $readingName = $('<div>').text(data.name).addClass('.modal-name').prependTo($('.photo'))
-      const $episode = $('<li>').text(data.episode).appendTo($readingName)
-      const $species = $('<li>').text(data.species).appendTo($readingName)
-      const $gender = $('<li>').text(data.gender).appendTo($readingName)
-      const $location = $('<li>').text(data.location.name).appendTo($readingName)
+      const $readingName = $('<div>').text(`Character: ${data.name}`).addClass('.modal-name').prependTo($('.photo'))
+      const $episode = $('<li>').text(`Episode: ${data.episode}`).appendTo($readingName)
+      const $species = $('<li>').text(`Species: ${data.species}`).appendTo($readingName)
+      const $gender = $('<li>').text(`Gender: ${data.gender}`).appendTo($readingName)
+      const $location = $('<li>').text(`Location: ${data.location.name}`).appendTo($readingName)
       //  const $episode = $('<div>').text(data.episode[horoscope]).appendTO($readingName);
 
 
